@@ -27,7 +27,7 @@ pipeline {
                 sh '''
                 docker service rm javaapp_service || true
                 docker service create \
-                  --name javaapp_service \
+                  --name javaapp \
                   javaapp:1.0
                 '''
             }
